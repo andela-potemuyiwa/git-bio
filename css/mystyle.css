@@ -1,0 +1,22 @@
+.holder{
+  border: 2px solid #ccc;
+  width: 250px;
+  height: 250px;
+  float: left;
+  display: inline-table;
+  margin: 20px;
+}
+
+.avatar{
+  border: 2px solid #ccc;
+  width: inherit;
+  height: 120px;
+  margin: 10px;
+}
+
+ .face {
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  width: 48px;
+  margin: 16px; 
+}

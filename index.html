@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <title>Code Box</title>
+  <meta name="viewport" content="initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+  <link rel="stylesheet" type="text/css" href="js/lib/angular-material/angular-material.css">
+
+  <script type="text/javascript" src="js/lib/angular/angular.js"></script>
+  <script type="text/javascript" src="js/lib/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="js/lib/angular-aria/angular-aria.js"></script>
+  <script src="js/lib/angular-animate/angular-animate.js"></script>
+  <script src="js/lib/angular-material/angular-material.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/controllers/usersController.js"></script>
+  <script src="js/services/usersservice.js"></script>
+
+  
+<body ng-controller="usersController" layout="column">
+<md-toolbar layout="row" > 
+ </md-toolbar>
+    <!-- Container #2 -->
+  <div flex layout="row">
+    <!-- Container #3 -->
+    <md-sidenav md-is-locked-open="true" class="md-whiteframe-z2">
+  <md-toolbar class="md-theme-light" md-theme="altTheme">
+    <h2 class="md-toolbar-tools">
+      <span>Andela Fellows</span>
+    </h2>
+  </md-toolbar>
+    <md-content>
+    <div ui-view></div>
+  </md-content>
+  </md-sidenav>
+
+    <!-- Container #4 -->
+    <md-content flex id="content"></md-content>
+
+  </div>
+
+</body>
+</html>
+
